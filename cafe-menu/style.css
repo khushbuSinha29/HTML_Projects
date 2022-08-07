@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common styles */
+.secondary-heading{
+    padding: 2rem 0 0.3rem 0;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+body{
+    /* background-color: #dee2e6; */
+    background-image: url(img/coffee-img.jpg);
+    opacity: 0.9;
+    font-family: 'Roboto', sans-serif; 
+    color: black;
+}
+
+
+
+.main-container{
+    background-color:#ffe8cc ;
+    width: 48rem;
+    margin: 5rem auto;
+    padding: 2rem;
+}
+
+/* header section  */
+
+header h1{
+    /* margin-top: 2rem;    not working */
+    text-align: center;
+    font-size: 3.2rem;
+    color: #343a40;
+}
+
+header p{
+    text-align: center;
+    margin: 1rem;
+}
+
+hr{
+    border: 2px solid brown;
+    margin-bottom: 1rem;
+}
+
+.flex-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+}
+
+.list-items{
+    list-style: none;
+    /* margin-bottom: 20px; */
+    font-size: 1.2rem;
+}
+
+.list-items li{
+    margin-bottom: 1rem;
+}
+
+.website-link{
+    /* text-decoration: none; */
+    /* margin: 2rem; */
+    display: inline-block;
+    margin: 1rem 0 1rem 0;
+}
+
+footer{
+    text-align: center;
+}
+
+.emoji-coffee{
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.emoji-dessert {
+    font-size: 2rem;
+    text-align: center;
+}
+

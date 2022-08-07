@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="form">
+        <div class="regform">
+            <h1>Registration Form</h1>
+            <p class="formheading">Please fill out this form with the required information</p>
+            <form action="#">
+                <fieldset>
+                    <label for="fname">Enter Your First Name:</label>
+                    <input type="text" id="fname" class="box1">
+                    <label for="lname">Enter Your Last Name: </label>
+                    <input type="text" id="lname" class="box1">
+                    <label for="email">Enter Your Email: </label>
+                    <input type="email" id="email" class="box1">
+                    <label for="password">Create a New Password:</label>
+                    <input type="password" id="password" class="box1">
+                </fieldset>
+                    
+                <fieldset>
+                    <label for="radio1" ><input type="radio" id="radio1" class="inline">Personal Account</label>
+                    
+                    <label for="radio2"><input type="radio" id="radio2" class="inline">Business Account</label>
+                    
+                    <label for="checkbox"><input type="checkbox" id="checkbox" class="inline" required>I accept the <a href="#">terms and
+                            condition</a></label>
+             
+            </fieldset>
+                <fieldset>
+                <label for="profilepic" >Upload a profile picture</label>
+                <input type="file" id="myfile">
+                <label for="age" >Input your age(years):</label>
+                <input type="number" id="age">
+                <label for="aboutus" >How did you hear about us?</label>
+                    <select id="aboutus">
+                        <option>(Select one)</option>
+                        <option>News</option>
+                        <option>Advertisments</option>
+                        <option>YourTube Channel</option>
+                        <option>Forum</option>
+                    </select>
+                <label for="bio">Provide a bio:</label>
+                <textarea  id="bio" cols="50" rows="4" placeholder="I like to code."></textarea>
+               
+                </fieldset>
+                <input type="submit"  class="submit">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
