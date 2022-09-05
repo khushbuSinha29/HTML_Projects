@@ -20,6 +20,9 @@ html {
 
     /* this we are applying for making the menu transform effect in media query */
     overflow-x: hidden;
+
+    /* Does not work on safari and mocrosoft edge */
+    scroll-behavior: smooth;
 }
 
 body {
