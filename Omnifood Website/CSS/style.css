@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 /* Forgot to scale as 10 px so the rem is taking the defult of 16px */
@@ -46,7 +46,7 @@ body {
     margin-bottom: 9.6rem;
 }
 
-.grid:not(:last-child){
+.grid:not(:last-child) {
     margin-bottom: 9.6rem;
 }
 
@@ -193,7 +193,7 @@ strong {
     text-align: center;
 }
 
-*:focus{
+*:focus {
     outline: none;
     box-shadow: 0 0 0 0.8rem rgba(207, 113, 31, 0.562);
 }
@@ -263,20 +263,20 @@ strong {
 
 /* MOBILE */
 
-.btn-mobile-nav{
+.btn-mobile-nav {
     border: none;
-    background:none;
+    background: none;
     cursor: pointer;
     display: none;
 }
 
-.icon-mobile-nav{
+.icon-mobile-nav {
     height: 4.8rem;
     width: 4.8rem;
     color: #333;
 }
 
-.icon-mobile-nav[name='close-outline']{
+.icon-mobile-nav[name='close-outline'] {
     display: none;
 }
 
@@ -691,31 +691,31 @@ strong {
     margin-top: 4.8rem;
 }
 
-.plan-details{
+.plan-details {
     font-size: 1.6rem;
     line-height: 1.6;
     text-align: center;
-    
+
 }
 
-.feature-icon{
+.feature-icon {
     color: #e67e22;
     height: 3.2rem;
     width: 3.2rem;
     margin-bottom: 3.2rem;
     background-color: #faefd3;
     padding: 1.6rem;
-    border-radius:50% ;
+    border-radius: 50%;
 }
 
-.feature-title{
+.feature-title {
     font-size: 2.4rem;
     color: #333;
     margin-bottom: 1.6rem;
     font-weight: 700;
 }
 
-.feature-text{
+.feature-text {
     font-size: 1.6rem;
     line-height: 1.8;
 }
@@ -724,11 +724,11 @@ strong {
 /* Pricing SECTION */
 /* ******************************** */
 
-.section-cta{
+.section-cta {
     padding: 4.8rem 0 12.8rem 0;
 }
 
-.cta{
+.cta {
     display: grid;
     grid-template-columns: 2fr 1fr;
     /* background-color: #e67e22; */
@@ -742,44 +742,45 @@ strong {
 
 }
 
-.cta-text-box{
+.cta-text-box {
     color: #45260a;
     padding: 4.8rem 6.4rem 6.4rem 6.4rem;
 }
 
-.cta .heading-secondary{
+.cta .heading-secondary {
     color: #45260a;
     margin-bottom: 3.2rem;
 }
 
-.cta-text{
+.cta-text {
     font-size: 1.8rem;
     line-height: 1.8;
     margin-bottom: 4.8rem;
 }
 
-.cta-img-box{
-    background-image:linear-gradient(to right bottom, rgba(235, 151, 78, 0.3), rgba(230, 125, 34, 0.3)), 
-    url("../content/img/eating.jpg");
+.cta-img-box {
+    background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.3), rgba(230, 125, 34, 0.3)),
+        url("../content/img/eating.jpg");
     background-size: cover;
     background-position: center;
 }
 
-.cta-form{
+.cta-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 3.2rem;
     row-gap: 2.4rem;
 }
 
-.cta-form label{
+.cta-form label {
     display: block;
     font-size: 1.6rem;
     font-weight: 500;
     margin-bottom: 1.2rem;
 }
 
-.cta-form input, .cta-form select {
+.cta-form input,
+.cta-form select {
     width: 100%;
     padding: 1.2rem;
     font-size: 1.8rem;
@@ -791,18 +792,18 @@ strong {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.121);
 }
 
-.cta-form input::placeholder{
+.cta-form input::placeholder {
     color: #aaa;
 }
 
-.btn--form{
+.btn--form {
     background-color: #45260a;
     color: #fdf2e9;
     align-self: end;
     padding: 1.2rem;
 }
 
-.btn--form:hover{
+.btn--form:hover {
     background-color: #fff;
     color: #555;
 }
@@ -818,65 +819,66 @@ FOOTER
 *************************
 */
 
-.footer{
+.footer {
     padding: 12.8rem 0;
     border-top: 1px solid #eee;
 }
 
-.footer-heading{
+.footer-heading {
     font-size: 1.8rem;
     font-weight: 500;
     margin-bottom: 3.2rem;
 
 }
 
-.footer-nav{
+.footer-nav {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
 }
 
-.footer-logo{
+.footer-logo {
     display: block;
     margin-bottom: 3.2rem;
 }
 
-.logo-col{
+.logo-col {
     display: flex;
     flex-direction: column;
 }
 
-.social-links{
+.social-links {
     list-style: none;
     display: flex;
     gap: 2.4rem;
 
 }
 
-.social-icon{
+.social-icon {
     height: 2.4rem;
     width: 2.4rem;
 }
 
-.copyright{
+.copyright {
     font-size: 1.4rem;
     color: #767676;
     line-height: 1.6;
     margin-top: auto;
 }
 
-.contact{
+.contact {
     font-style: normal;
     font-size: 1.6rem;
     line-height: 1.6;
 }
 
-.contact p{
+.contact p {
     margin-bottom: 2.4rem;
 }
-.footer-link:link, 
-.footer-link:visited{
+
+.footer-link:link,
+.footer-link:visited {
     text-decoration: none;
     font-size: 1.6rem;
     color: #767676;
@@ -884,10 +886,28 @@ FOOTER
 }
 
 .footer-link:hover,
-.footer-link:active{
+.footer-link:active {
     color: #555;
 }
 
-.grid--footer{
-    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr  ;
+.grid--footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+/* Sticky Navigation */
+
+.sticky .header{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.977);
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.034);
+    z-index: 999;
+}
+.sticky .section-hero{
+    margin-top: 9.6rem;
 }

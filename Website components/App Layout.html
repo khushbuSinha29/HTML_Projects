@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+            color: rgb(28, 27, 27);
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 80px 400px 1fr 250px;
+            grid-template-rows: 80px 1fr;
+        }
+        nav{
+            background-color: rgb(80, 77, 77);
+            grid-row: 1/-1;
+            color: white;
+        }
+        menu{
+            background-color: #b197fc;
+            color: white;
+            grid-column: 2/-1;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 0 40px;
+        }
+        section{
+            background-color: #dee2e6;
+            padding: 40px;
+            overflow: scroll;
+
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .email{
+            /* width: 200px; */
+            background-color: grey;
+            flex-shrink: 0;
+            height: 96px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        aside{
+            background-color: #dee2e6;
+        }
+
+        nav, section, aside{
+            padding-top: 24px;
+        }
+        button{
+            display: inline-block;
+            font-size: 16px;
+            background-color: #5f3dc4;
+            border: none;
+            cursor: pointer;
+            color: white;
+            padding: 8px 12px;
+            font-weight: bold;
+        }
+        button:last-child{
+            background-color: #d6336c;
+            margin-left: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        Nav
+    </nav>
+    <menu>
+        <button>New</button>
+        <button>Reply</button>
+        <button>Forward</button>
+        <button>Mark unread</button>
+        <button>Trash</button>
+      
+    </menu>
+    <section>
+        <div class="email">Email 1</div>
+        <div class="email">Email 2</div>
+        <div class="email">Email 3</div>
+        <div class="email">Email 4</div>
+        <div class="email">Email 5</div>
+        <div class="email">Email 6</div>
+        <div class="email">Email 7</div>
+        <div class="email">Email 8</div>
+        <div class="email">Email 9</div>
+        <div class="email">Email 10</div>
+    </section>
+    <main>Email View</main>
+    <aside>Additional Info</aside>
+
+</body>
+</html>

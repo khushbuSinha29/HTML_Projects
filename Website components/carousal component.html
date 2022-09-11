@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caurousal</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ------------------------ */
+        /* GENERAL STYLES */
+        /* ------------------------ */
+        body {
+            font-family: "Inter", sans-serif;
+            /* color: #343a40; */
+        }
+
+        .carousal {
+            background-color: #087f5b;
+            width: 800px;
+            margin: 100px auto;
+            border-radius: 8px;
+            color: white;
+            padding: 32px;
+            padding-right: 48px;
+            padding-left: 86px;
+            display: flex;
+            align-items: center;
+            gap: 82px;
+            position: relative;
+        }
+
+        img {
+            height: 200px;
+            transform: scale(1.5);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.247);
+        }
+
+        .testimonial {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+            margin-bottom: 32px;
+            color: #e6fcf5;
+        }
+
+        .testimonial-author {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #c3fae8;
+        }
+
+        .testimonial-job {
+            font-size: 12px;
+            color: #c3fae8;
+        }
+
+        .btn {
+            background-color: white;
+            border: none;
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            border-radius: 50%;
+            stroke: #087f5b;
+            cursor: pointer;
+
+            /* for > and < making these to center */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.288);
+        }
+
+        .btn-icon {
+            height: 24px;
+            width: 24px;
+        }
+
+        .btn-left {
+            /* In relation to the parent element  */
+            left: 0;
+            top: 50%;
+
+            /* In rleation to the element itself */
+            transform: translate(-50%, -50%);
+            /* horizontally vertically */
+        }
+
+        .btn-right {
+            right: 0;
+            top: 50%;
+            transform: translate(50%, -50%);
+        }
+
+        .dot{
+            height: 12px;
+            width: 12px;
+            background-color: white;
+            border: 2px solid #087f5b;
+            border-radius: 50%;
+            cursor: pointer;
+            /* position: absolute; */
+
+        }
+        .dots{
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%,32px);
+
+            display: flex;
+            gap: 12px;
+        }
+
+        .dot-fill{
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carousal">
+
+        <img src="maria.jpg" alt="Maria image" class="image">
+        <blockquote>
+            <!-- <div> -->
+            <p class="testimonial">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quis repellat autem labore nobis
+                aliquam pariatur dolore aspernatur enim, consequatur veritatis fuga, excepturi debitis. Ipsa eaque
+                mollitia vitae dicta quam.
+            </p>
+            <p class="testimonial-author">
+                Maria de Almeida
+            </p>
+            <p class="testimonial-job">
+                Senior Product Manager at EDP Comercial
+            </p>
+        </blockquote>
+        <!-- </div> -->
+        <button class="btn btn-left">
+            <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+
+        <button class="btn btn-right">
+            <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+
+        <div class="dots">
+            <button class="dot dot-fill">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
